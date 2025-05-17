@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <title>Vite App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
-    <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+    />
   </head>
 
   <body>
@@ -130,8 +134,80 @@
         </div>
       </section>
 
-      <section class="padding-block-700 | carousel">
+      <section class="padding-block-700 | carousel text-center">
         <h2 class="fs-secondary-heading fw-bold">Meet the team</h2>
+        <ul class="slider">
+          <li>
+            <img src="/avatar-1.png" alt="" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Gabrielle Patrick</h3>
+              <p data-width="wide">CEO</p>
+            </div>
+          </li>
+          <li>
+            <img src="/avatar-2.png" alt="" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Femi Fayemi</h3>
+              <p data-width="wide">Deputy CFO</p>
+            </div>
+          </li>
+          <li>
+            <img src="/avatar-3.png" alt="" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Doug Macclennan</h3>
+              <p data-width="wide">CRO</p>
+            </div>
+          </li>
+          <li>
+            <img src="/avatar-4.png" alt="" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Paul Cardoen</h3>
+              <p data-width="wide">Chairman</p>
+            </div>
+          </li>
+          <li>
+            <img src="/avatar-5.png" alt="" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Ken Akure</h3>
+              <p data-width="wide">Corp Dev</p>
+            </div>
+          </li>
+          <li>
+            <img src="/avatar-6.png" alt="" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Sharnjit Kaur</h3>
+              <p data-width="wide">iNED</p>
+            </div>
+          </li>
+          <li>
+            <img src="/avatar-7.png" alt="" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Arun Aggarwal</h3>
+              <p data-width="wide">Advisor</p>
+            </div>
+          </li>
+          <li>
+            <img src="/avatar-8.png" alt="" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Rod Ashley</h3>
+              <p data-width="wide">Advisor</p>
+            </div>
+          </li>
+          <li>
+            <img src="/avatar-9.png" alt="" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Samuel Aiyere</h3>
+              <p data-width="wide">INED Designate</p>
+            </div>
+          </li>
+          <li>
+            <img src="/avatar-10.png" alt="" />
+            <div class="slider-content | flow" style="--flow-spacer: 1rem">
+              <h3 class="fw-bold">Philip Ogilvie</h3>
+              <p data-width="wide">Advisor</p>
+            </div>
+          </li>
+        </ul>
         <button class="button">Get Started</button>
       </section>
 
@@ -230,6 +306,7 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

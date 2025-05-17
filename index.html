@@ -12,7 +12,7 @@
     <header class="primary-header">
       <div class="container">
         <div class="nav-wrapper">
-          <a href=""><img src="/logo.png" alt="logo" /></a>
+          <a href=""><img src="/logo.svg" alt="logo" /></a>
           <button
             class="mobile-nav-toggle"
             aria-controls="primary-navigation"
@@ -51,7 +51,7 @@
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div>
+            <div class="flow">
               We want to help drive competition, transparency, and innovation in
               the financial services sector&#46;
               <h1 class="fs-primary-heading fw-bold">
@@ -78,7 +78,7 @@
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div>
+            <div class="flow">
               <h2 class="fs-secondary-heading fw-bold">
                 Whats's different about knabu&#63;
               </h2>
@@ -88,26 +88,34 @@
               </p>
             </div>
             <div>
-              <ul class="numbered-items" role="list">
+              <ul class="numbered-items | flow" role="list">
                 <li>
-                  <h3 class="fs-600 fw-bold">Acting in good faith</h3>
-                  <p></p>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="fs-600 fw-bold"></h3>
+                    <p data-width="wide">Acting in good faith</p>
+                  </div>
                 </li>
                 <li>
-                  <h3 class="fs-600 fw-bold">
-                    Avoiding foreseeable harm to customers
-                  </h3>
-                  <p></p>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="fs-600 fw-bold"></h3>
+                    <p data-width="wide">
+                      Avoiding foreseeable harm to customers
+                    </p>
+                  </div>
                 </li>
                 <li>
-                  <h3 class="fs-600 fw-bold">
-                    Enable and support financial objectives
-                  </h3>
-                  <p></p>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="fs-600 fw-bold"></h3>
+                    <p data-width="wide">
+                      Enable and support financial objectives
+                    </p>
+                  </div>
                 </li>
                 <li>
-                  <h3 class="fs-600 fw-bold">Delivering positive outcomes</h3>
-                  <p></p>
+                  <div class="flow" style="--flow-spacer: 1em">
+                    <h3 class="fs-600 fw-bold"></h3>
+                    <p data-width="wide">Delivering positive outcomes</p>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -120,50 +128,91 @@
         <button class="button">Get Started</button>
       </section>
 
-      <section class="cta | padding-block-700 | bg-accent-400 text-neutral-100">
+      <section class="cta | padding-block-900 bg-accent-400 text-neutral-100">
         <div class="container">
-          <div class="even-columns">
+          <div class="even-columns vertical-align-center">
             <div>
-              <p class="fs-secondary-heading fw-bold">
+              <p class="fs-primary-heading fw-bold">
                 Register Your Interest &amp; Get Updates
               </p>
-              <div>
-                <button class="button" data-type="inverted">Get Started</button>
-              </div>
+            </div>
+            <div class="justify-self-end-md">
+              <button class="button" data-type="inverted">Get Started</button>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="padding-block-700 bg-neutral-900 text-neutral-100">
+    <footer
+      class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100"
+    >
       <div class="container">
-        <div class="even-columns">
-          <div>
-            <a href=""><img src="/logo.png" alt="logo" /></a>
-            <ul role="list" aria-label="Social links">
-              <li><a aria-label="facebook" href="#"></a></li>
-              <li><a aria-label="youtube" href="#"></a></li>
-              <li><a aria-label="twitter" href="#"></a></li>
-              <li><a aria-label="instagram" href="#"></a></li>
+        <div class="primary-footer-wrapper">
+          <div class="primary-footer-logo-social">
+            <a href="#" aria-label="home">
+              <img
+                src="/logo.svg"
+                class="logo"
+                alt="Logo"
+                height="75"
+                width="75"
+              />
+            </a>
+
+            <ul class="social-list" role="list" aria-label="Social links">
+              <li>
+                <a aria-label="facebook" href="#">
+                  <svg class="social-icon">
+                    <use xlink:href="/social-icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="youtube" href="#">
+                  <svg class="social-icon">
+                    <use xlink:href="/social-icons.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="twitter" href="#">
+                  <svg class="social-icon">
+                    <use xlink:href="/social-icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a aria-label="instagram" href="#">
+                  <svg class="social-icon">
+                    <use xlink:href="/social-icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
             </ul>
           </div>
-          <div>
+          <div class="primary-footer-nav">
             <nav class="footer-nav">
-              <ul aria-label="Footer" role="list">
+              <ul
+                class="flow"
+                style="--flow-spacer: 1em"
+                aria-label="Footer"
+                role="list"
+              >
                 <li><a href="#">Vision</a></li>
                 <li><a href="#">What We Do</a></li>
                 <li><a href="#">Team</a></li>
                 <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#"></a>Terms &amp; Conditions</li>
-                <li><a href="#"></a></li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
               </ul>
             </nav>
           </div>
-          <div>
+          <div class="primary-footer-form">
             <form action="">
-              <input type="email" /><button class="button">Submit</button>
+              <input type="email" /><button class="button" data-shadow="none">
+                Submit
+              </button>
             </form>
             <p>
               &copy; Copyright 2023 Knabu Distributed Systems Ltd &#45; All
